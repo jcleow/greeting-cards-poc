@@ -1,0 +1,43 @@
+/* Most of it I copied from figma, but the numbers maybe x2 because I downloaded the X2 file for the template image */
+.template{
+    z-index: 10
+}
+.container {
+    width: 696px;
+    height: 1240px;
+    position: relative;
+}
+
+.rectangle {
+    position: absolute;
+    width: 686px;
+    height: 140px;
+    left: 2px;
+    top: 564px;
+    background: #E8BAA3;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text {
+    width: 410px;
+    height: 112px;
+
+    font-family: 'Avenir Next Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    /* or 129% */
+
+    text-transform: capitalize;
+
+    /* Neutral/D Neutral 300 */
+
+    color: #1A2258;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
