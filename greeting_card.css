@@ -1,4 +1,4 @@
-/* Most of it I copied from figma, but the numbers maybe x2 because I downloaded the X2 file for the template image */
+/* Most of it I copied from figma, but the numbers maybe x2 because I downloaded the X2 file for the template image  */
 .template{
     z-index: 10
 }
@@ -8,11 +8,7 @@
     position: relative;
 }
 
-<<<<<<< Updated upstream:template.css
-.agent {
-=======
 .agentSection {
->>>>>>> Stashed changes:greeting_card.css
     position: absolute;
     width: 686px;
     height: 140px;
@@ -23,11 +19,7 @@
     justify-content: space-evenly;
 }
 
-<<<<<<< Updated upstream:template.css
-.agent_details {
-=======
 .agentDetails {
->>>>>>> Stashed changes:greeting_card.css
     width: 410px;
     height: 112px;
     font-family: 'Avenir Next Condensed';
