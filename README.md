@@ -32,7 +32,7 @@ html2page is an alpha build version so there are some small bugs here and there
 2. html2Page also has some documentation on how to deploy onto docker, so it would be interesting to check that out as well.
 
 ### Known errors
-```[0307/230411.724353:ERROR:command_buffer_proxy_impl.cc(128)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.``` comes from html2page. Not sure why its happening
+```[0307/230411.724353:ERROR:command_buffer_proxy_impl.cc(128)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.``` comes from html2page because of some chromium setting which I have yet to set.
 
 ### Other Considerations/next steps:
 1. We can also investigate using [playwright](https://github.com/microsoft/playwright-python) but havent gotten a chance to.
