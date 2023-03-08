@@ -1,8 +1,11 @@
+import time
 import dominate
 from dominate.tags import *
 import time
 from html2image import Html2Image
 
+
+start = time.time()
 # 1. Use dominate to perform DOM manipulation
 doc = dominate.document(title='Dominate your HTML')
 
@@ -15,7 +18,7 @@ def agent_profile_pic(agent_info: dict):
     image["src"] = agent_info.get("profile_pic_url")
 
 
-@div(cls="text")
+@div(cls="agent_details")
 def agent_details(agent_info: dict):
     span(agent_info.get("name"))
     br()
@@ -24,7 +27,7 @@ def agent_details(agent_info: dict):
     span(f"{agent_info.get('agency_name')} | CEA: {agent_info.get('cea_num')}")
 
 
-@div(cls="rectangle")
+@div(cls="agent")
 def agent_info_section(agent_info: dict):
     agent_profile_pic(agent_info)
     agent_details(agent_info)
@@ -56,12 +59,14 @@ with doc:
 
 html_str = doc
 
-# 2. Use HTML2Image to perform headless browser (default is Chromium browser) to perform screenshot
-# Set this size to be the exact size of the greeting that we have because they don't have this feature yet
+# 2. Use HTML2Image (a wrapper on a headless browser -default is Chromium browser) to perform screenshot
+# Set this size to be the exact size of the greeting that we have because they don't have the feature to auto identify image
 hti = Html2Image(size=(687,1220))
 hti.load_str(str(doc), as_filename='template.html')
 hti.screenshot(html_file="template.html", css_file="template.css", save_as='greeting_card.png')
 
+end = time.time()
+print(f'Took {end-start} seconds')
 
 
 

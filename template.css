@@ -8,7 +8,7 @@
     position: relative;
 }
 
-.rectangle {
+.agent {
     position: absolute;
     width: 686px;
     height: 140px;
@@ -19,24 +19,16 @@
     justify-content: space-evenly;
 }
 
-.text {
+.agent_details {
     width: 410px;
     height: 112px;
-
     font-family: 'Avenir Next Condensed';
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
     line-height: 36px;
-    /* or 129% */
-
     text-transform: capitalize;
-
-    /* Neutral/D Neutral 300 */
-
     color: #1A2258;
-
-    /* Inside auto layout */
     flex: none;
     order: 1;
     flex-grow: 0;
