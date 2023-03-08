@@ -20,7 +20,7 @@ pip install html2image
 python create_greeting_card.py
 ```
 
-** Make sure you have Chrome installed (html2image uses Chromium) **
+** Make sure you have Chrome installed (html2image uses Chromium by default) **
 
 See these github libraries here:
 * https://github.com/Knio/dominate/ [~1.5k stars | Seems like it is a stable version already]
