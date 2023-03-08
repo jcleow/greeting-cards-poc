@@ -6,7 +6,7 @@ POC to overlay images using python dom manipulation &amp; headless chromium wrap
 * After which, we will use a headless browser to take a screenshot
 
 ### Rationale
-* Using a framework as intensive as React when there isn't much state mangement to handle, nor are there any re-rendering of any DOM elements seems excessive for such use case.
+* Using a framework as intensive as React when there isn't much state mangement to handle, nor are there any re-rendering of any DOM elements. Hence we probably don't need these additional overheads for such use case.
 * We can easily port it into a python backend to generate such images as a background job.
 
 ### How to Run
