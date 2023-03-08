@@ -35,7 +35,7 @@ html2page is an alpha build version so there are some small bugs here and there
 ```[0307/230411.724353:ERROR:command_buffer_proxy_impl.cc(128)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.``` comes from html2page because of some chromium setting which I have yet to set.
 
 ### Other Considerations/next steps:
-1. We can also investigate using [playwright](https://github.com/microsoft/playwright-python) but havent gotten a chance to.
+1. We can also investigate using [playwright](https://github.com/microsoft/playwright-python) as an alternative to html2page but havent gotten a chance to.
 
 Alternative was pyppeteer[https://github.com/pyppeteer/pyppeteer] but seems outdated. This is because html2page is still an alpha build, but it is really easy to use
 
